@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Set Countdown Timer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🎯 Set Your Countdown</h1>
+
+    <!-- Input Section -->
+    <div class="input-section">
+      <label for="datetime">Choose date and time:</label>
+      <input type="datetime-local" id="datetime" />
+
+      <!-- Start & Reset Buttons -->
+      <div class="button-group">
+        <button id="startBtn">Start Countdown</button>
+        <button id="resetBtn" class="hidden">Reset</button>
+      </div>
+    </div>
+
+    <!-- Countdown Timer Display -->
+    <div id="timer-section" class="hidden">
+      <div class="countdown">
+        <div class="time-box">
+          <span id="days">00</span>
+          <label>Days</label>
+        </div>
+        <div class="time-box">
+          <span id="hours">00</span>
+          <label>Hours</label>
+        </div>
+        <div class="time-box">
+          <span id="minutes">00</span>
+          <label>Minutes</label>
+        </div>
+        <div class="time-box">
+          <span id="seconds">00</span>
+          <label>Seconds</label>
+        </div>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+
+      <!-- Countdown Status -->
+      <p id="status" class="status"></p>
+      <p id="target-date" class="target-date"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
